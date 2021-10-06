@@ -12,7 +12,7 @@ All models were trained in Kaggle Kernel. During the solution process, more than
 
 If you have any questions, write them to me.
 
-__If my solution turned out to be useful for you, put a star!)__
+__If my solution turned out to be useful for you, put a ⭐️!)__
 
 ## Solution description:
 
