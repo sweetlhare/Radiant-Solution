@@ -2,6 +2,16 @@
 
 The solution that allowed me to take 2nd place in the Radiant Earth Spot the Crop XL Challenge and 3rd place in the Radiant Earth Spot the Crop Challenge.
 
+
+
+## Disclaimer
+
+
+
+During the solution process, more than 50 different models were built, starting with a simple CatBoostClassifier and its stratification, ending with LightAutoML.  In addition, various data samples were used. All these models have not been saved, but they can be reproduced if necessary. The best methods of building models can be seen in notebook __(create_models.ipynb)__. Also, all files with submissions have names by which you can roughly understand the method of obtaining this submission.
+
+If you have any questions, write them to me.
+
 ## Solution description:
 
 1. __(make_train_data.ipynb, make_train_data.ipynb)__ 
@@ -19,6 +29,7 @@ The geographical feature turned out to be quite strong (it was tested on the imp
 8. __(unite_data.ipynb)__ 
 In this notebook, raw and aggregated data are combined into one dataset and stored in the feather format. This format saves space (it's important for mac users 😅) and speeds up file download.
 9. __(create_models.ipynb)__ 
-The main notebook in which the fate of my decision was decided. Initially, I worked exclusively with CatBoostClassifier, using various data samples, model parameters and stratification (KFold, StratifiedKFold). But in the last week it became clear that catboost is not able to issue a competitive account. So I decided to try (for the first time) LightAutoML. And it really boosted my score a lot. On data with geo features, it was possible to get a result of ~0.74, without geo features ~0.76. 
+The main notebook in which the fate of my decision was decided. Initially, I worked exclusively with CatBoostClassifier, using various data samples, model parameters and stratification (KFold, StratifiedKFold). But in the last week it became clear that catboost is not able to issue a competitive account. So I decided to try (for the first time) LightAutoML. And it really boosted my score a lot. On data with geo features, it was possible to get a result of ~0.74, without geo features ~0.76.
+10. __(make_sub_from_all.ipynb)__
 But combining the predictions of models with geo and without geo really improved the score. The average of these solutions immediately gave a score of ~0.68. 
 The main and best solution was obtained by taking the median of all the solutions received during the competition (individually they gave a score from ~0.68 to ~0.8). And damn it, it worked - __sub_all_all.csv__ gave a score of 0.67125 and a __top 3__ in this competition.
