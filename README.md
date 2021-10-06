@@ -8,7 +8,7 @@ Thanks a lot to the Zindi team who organized this competition, and to all the pa
 
 ## Disclaimer
 
-During the solution process, more than 50 different models were built, starting with a simple CatBoostClassifier and its stratification, ending with LightAutoML.  In addition, various data samples were used. All these models have not been saved, but they can be reproduced if necessary. The best methods of building models can be seen in notebook __(create_models.ipynb)__. Also, all files with submissions have names by which you can roughly understand the method of obtaining this submission.
+All models were trained in Kaggle Kernel. During the solution process, more than 50 different models were built, starting with a simple CatBoostClassifier and its stratification, ending with LightAutoML.  In addition, various data samples were used. All these models have not been saved, but they can be reproduced if necessary. The best methods of building models can be seen in notebook __(create_models.ipynb)__. Also, all files with submissions have names by which you can roughly understand the method of obtaining this submission.
 
 If you have any questions, write them to me.
 
